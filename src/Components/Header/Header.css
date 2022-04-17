@@ -1,8 +1,12 @@
 .nav-color {
-  color: #414042 !important;
+  color: #fff !important;
+  font-size: 18px;
+}
+.navbar-toggler {
+  background: #000 !important;
 }
 .nav-color:hover {
-  color: #36d7b7 !important;
+  color: #ffc221 !important;
 }
 .nav-color:focus-visible {
   outline: inherit;
