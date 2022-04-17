@@ -12,7 +12,7 @@ const AboutSection = () => {
             <img src={personalImg} alt="" />
           </div>
           <div className="col-md-6">
-            <div className="aboutSction-info">
+            <div className="aboutSction-info p-1 md:p-24">
               <h2 className="about-heading-1">Hi, I'm Frank Castle.</h2>
               <h2 className="about-heading-2">
                 I'm The Founder of The EduMall Academy.

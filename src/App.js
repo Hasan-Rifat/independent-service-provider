@@ -6,8 +6,8 @@ import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import Home from "./Components/Home/Home";
 import ServiceSinglePage from "./Components/Home/Slider/ServiceSinglePage/ServiceSinglePage";
-import Login from "./Components/Login/Login";
-import Register from "./Components/Login/Register";
+import Login from "./Components/Login/Login/Login";
+import Register from "./Components/Login/Register/Register";
 import NotFound from "./Components/NotFound/NotFound";
 
 function App() {

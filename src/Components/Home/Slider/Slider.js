@@ -4,7 +4,8 @@ import "./Slider.css";
 const Slider = () => {
   return (
     <section className="hero">
-      <div className="container">
+      <div className="overlay"></div>
+      <div className="container hero-main">
         <div className="row d-flex justify-center items-center h-screen w-full">
           <div className="col-md-6">
             <div className="hero-info">
