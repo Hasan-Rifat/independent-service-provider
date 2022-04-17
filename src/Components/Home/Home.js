@@ -1,12 +1,14 @@
-import React from 'react';
-import Slider from './Slider/Slider';
+import React from "react";
+import AboutSection from "./AboutSection/AboutSection";
+import Slider from "./Slider/Slider";
 
 const Home = () => {
-    return (
-        <main>
-            <Slider></Slider>
-        </main>
-    );
+  return (
+    <main>
+      <Slider></Slider>
+      <AboutSection />
+    </main>
+  );
 };
 
 export default Home;

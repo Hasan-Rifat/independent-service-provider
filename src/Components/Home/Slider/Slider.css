@@ -47,5 +47,6 @@
   letter-spacing: 1px;
 }
 .hero-btn:hover {
-  background: #fff;
+  background: #fff !important;
+  color: #0071dc !important;
 }

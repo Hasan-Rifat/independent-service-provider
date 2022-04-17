@@ -5,8 +5,8 @@ import './Header.css'
 
 const Header = () => {
   return (
-    <header>
-      <Navbar collapseOnSelect expand="lg" fixed="top" className="text-primary " variant="dark">
+    <header className="header">
+      <Navbar collapseOnSelect expand="lg" fixed="top" className="text-primary header" variant="dark">
         <Container>
           <Navbar.Brand className="nav-color" as={Link} to="/">
             <span className="text-xl ">Photographer</span>

@@ -16,7 +16,7 @@ const Slider = () => {
               <button className="hero-btn btn">Register</button>
             </div>
           </div>
-          <div className="col-md-6"></div>
+          <div className="hidden md:block col-md-6"></div>
         </div>
       </div>
     </section>

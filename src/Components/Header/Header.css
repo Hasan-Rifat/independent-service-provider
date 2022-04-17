@@ -1,6 +1,10 @@
+.header{
+  background: #252525c4 !important;
+}
 .nav-color {
   color: #fff !important;
   font-size: 18px;
+  padding: 10px 25px !important;
 }
 .navbar-toggler {
   background: #000 !important;
