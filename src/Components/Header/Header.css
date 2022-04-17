@@ -1,0 +1,9 @@
+.nav-color {
+  color: #414042 !important;
+}
+.nav-color:hover {
+  color: #36d7b7 !important;
+}
+.nav-color:focus-visible {
+  outline: inherit;
+}
