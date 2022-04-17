@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Communications",
+    "description": "Successful Negotiation: Master Your Negotiating Skills",
+    "price": "$39.00",
+    "image": "https://edumall.thememove.com/main/wp-content/uploads/sites/2/2020/12/image-1-copy-70-480x304.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Productivity",
+    "description": "Time Management Mastery: Do More, Stress Less",
+    "price": "$29.00",
+    "image": "https://edumall.thememove.com/main/wp-content/uploads/sites/2/2020/12/image-1-copy-64-480x304.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Programming Languages",
+    "description": "Angular – The Complete Guide (2020 Edition)",
+    "price": "$42.00",
+    "image": "https://edumall.thememove.com/main/wp-content/uploads/sites/2/2020/12/image-1-copy-57-480x304.jpg"
+  }
+]

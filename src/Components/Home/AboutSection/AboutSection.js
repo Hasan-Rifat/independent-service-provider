@@ -5,7 +5,7 @@ import "./AboutSection.css";
 
 const AboutSection = () => {
   return (
-    <section className="my-36">
+    <section className="my-16">
       <div className="container">
         <div className="row flex justify-center items-center">
           <div className="col-md-6">
