@@ -21,9 +21,7 @@
   white-space: nowrap;
   cursor: pointer;
   font-weight: 700 !important;
-
   font-size: 18px;
-  letter-spacing: 1px;
   border-radius: 20px;
 }
 .bg-logo:hover {
@@ -32,6 +30,7 @@
 
 .text-icon {
   color: #0071dc;
+  text-transform: capitalize;
 }
 .bg-logo:hover .text-icon {
   color: #0f2c4c;

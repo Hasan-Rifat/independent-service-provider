@@ -15,7 +15,7 @@ const AboutSection = () => {
             <div className="aboutSction-info p-1 md:p-24">
               <h2 className="about-heading-1">Hi, I'm Frank Castle.</h2>
               <h2 className="about-heading-2">
-                I'm The Founder of The EduMall Academy.
+                I'm The Founder of The Academy.
               </h2>
               <p>
                 Facing the study with the right mindset can change our chances
