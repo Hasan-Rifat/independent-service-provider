@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+// import useCustomHook from "../../../useHooks/useCustomHook";
+import { useEffect, useState } from "react";
 import ServiceDetails from "../ServiceDetails/ServiceDetails";
 
 const Service = () => {
@@ -8,6 +9,7 @@ const Service = () => {
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);
+  // [services, setServices] = useCustomHook();
   return (
     <section>
       <div className="container">

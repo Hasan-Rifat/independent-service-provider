@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Button, Form } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import SocialLogin from "../SocialLogin/SocialLogin";
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
@@ -8,8 +8,10 @@ import auth from "../../../firebase.init";
 const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
   const [createUserWithEmailAndPassword, user, loading, error] =
     useCreateUserWithEmailAndPassword(auth);
+  const navigate = useNavigate();
 
   const handleEmail = (event) => {
     setEmail(event.target.value);
@@ -17,23 +19,26 @@ const Register = () => {
   const handlePassword = (event) => {
     setPassword(event.target.value);
   };
-  const handleSubmit = () => {
-    createUserWithEmailAndPassword(email, password);
+  const handleConfirmPassword = (event) => {
+    setConfirmPassword(event.target.value);
   };
+  const handleSubmit = () => {};
 
   let errorElement;
 
   if (error) {
     errorElement = <p className="text-danger"> Error {error?.message}</p>;
+  } else {
+    errorElement = "";
   }
 
-  // if (loading) {
-  //   return <p>Loading...</p>;
-  // }
-
-  const handleLogin = (event) => {
+  const handleSignUp = (event) => {
     event.preventDefault();
+    createUserWithEmailAndPassword(email, password);
   };
+  if (user) {
+    navigate("/");
+  }
   const handleForgotPassword = (event) => {};
   return (
     <section className="py-48">
@@ -42,7 +47,7 @@ const Register = () => {
           <div className="col">
             <div className="w-50 mx-auto">
               <h2 className="text-center py-3">Register</h2>
-              <Form onSubmit={handleLogin}>
+              <Form onSubmit={handleSignUp}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                   <Form.Label>Email address</Form.Label>
                   <Form.Control
@@ -71,7 +76,7 @@ const Register = () => {
                   <Form.Control
                     name="confirm-password"
                     className="w-100 input-filled"
-                    onBlur={handlePassword}
+                    onBlur={handleConfirmPassword}
                     type="password"
                     placeholder="Confirm Password"
                     required
@@ -87,7 +92,7 @@ const Register = () => {
                 </div>
                 <Button
                   className="mx-auto my-4 d-block w-75 service-btn btn"
-                  onBlur={handleSubmit}
+                  // onBlur={handleSubmit}
                   variant="primary"
                   type="submit"
                 >

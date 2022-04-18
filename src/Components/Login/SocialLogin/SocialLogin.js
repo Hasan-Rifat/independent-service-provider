@@ -8,6 +8,7 @@ import {
   useSignInWithGoogle,
 } from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router-dom";
+import Loading from "../../Loading/Loading";
 
 const SocialLogin = () => {
   const navigate = useNavigate();
@@ -21,6 +22,10 @@ const SocialLogin = () => {
 
     signInWithGoogle();
   };
+
+  if(loading || FbLoading){
+    return <Loading></Loading>
+  }
 
   if (googleUser || fbUser) {
     navigate("/home");

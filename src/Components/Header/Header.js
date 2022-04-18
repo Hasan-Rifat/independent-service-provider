@@ -9,8 +9,8 @@ import "./Header.css";
 const Header = () => {
   const [user, loading, error] = useAuthState(auth);
   const userLogOut = () => {
-    signOut(auth)
-  }
+    signOut(auth);
+  };
   return (
     <header className="header">
       <Navbar
@@ -37,7 +37,9 @@ const Header = () => {
                 About me
               </Nav.Link>
               {user ? (
-                <Button onClick={userLogOut} className="service-btn btn">LogOut</Button>
+                <Button onClick={userLogOut} className="service-btn btn">
+                  LogOut
+                </Button>
               ) : (
                 <Nav.Link as={Link} to="/login" className="nav-color">
                   Login
