@@ -22,7 +22,7 @@ const Header = () => {
       >
         <Container>
           <Navbar.Brand className="nav-color" as={Link} to="/">
-            <span className="text-xl ">Photographer</span>
+            <span className="text-xl ">Education</span>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
