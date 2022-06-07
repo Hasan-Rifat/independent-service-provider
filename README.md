@@ -1,7 +1,5 @@
 # Website Link
 
-Code Link: https://github.com/programming-hero-web-course-4/independent-service-provider-Hasan-Rifat
-
 live site : https://assignment-10-b8408.web.app
 ### What and how?
 
